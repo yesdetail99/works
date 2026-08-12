@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Arial, "Hiragino Sans", sans-serif;
+  color: #111111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;      /* 親の文字サイズをそのまま引き継ぐ */
+  font-weight: inherit;    /* 親の太さをそのまま引き継ぐ */
+  line-height: inherit;    /* 親の行高をそのまま引き継ぐ */
+}
+
+/* ヘッダー共通 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px 0 50px;
+}
+
+.site-title {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.site-nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.site-nav a {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+/* トップページ */
+
+.top-page {
+  /* 画像を1枚だけに限定し、繰り返さない */
+  background-repeat: no-repeat;
+
+  /* 画像を画面の中央に配置 */
+  background-position: center center;
+
+  /* 画面全体を覆うように拡大表示する（おすすめ） */
+  background-size: cover;
+
+  background-attachment: fixed;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.top-container {
+  max-width: 860px;
+  margin: 80px auto 100px;
+  padding: 0 20px;
+}
+
+.top-image-wrap {
+  width: 100%;
+}
+
+.top-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CVページ */
+.about-container {
+  max-width: 860px;
+  margin: 80px auto 120px;
+  padding: 0 20px;
+}
+
+.about-section {
+  margin-bottom: 60px;
+}
+
+.bio {
+  font-size: 13px;
+  line-height: 2.0;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #888888;
+}
+
+.cv-list {
+  list-style: none;
+}
+
+.cv-list li {
+  display: flex;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.cv-list .year {
+  width: 90px;
+  flex-shrink: 0;
+  color: #666666;
+}
+
+.cv-list .detail {
+  color: #111111;
+}
+
+/* Worksページ */
+.works-container {
+  max-width: 860px;
+  margin: 80px auto 120px;
+  padding: 0 20px;
+}
+
+.work-item {
+  margin-bottom: 120px;
+}
+
+.work-image-wrap {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.work-image {
+  width: 70%;
+  height: auto;
+  display: block;
+}
+
+.work-title {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.work-meta {
+  font-size: 12px;
+  color: #777777;
+  letter-spacing: 0.03em;
+}
+
+.work-link {
+  font-size: 12px;           /* 周りと合わせた控えめなサイズ */
+  margin-top: 10px;
+}
+
+.work-link a {
+  font-size: 12px !important;/* 強制的に12pxに固定 */
+  color: #666666;
+  text-decoration: underline;
+  word-break: break-all;      /* 長いURLでも枠からはみ出さず途中で自動折り返しする */
+}
+
+.work-link a:hover {
+  color: #111111;
+}
+
+
+
+
+
+/* Contactページ */
+.contact-container {
+  max-width: 860px;
+  margin: 80px auto 120px;
+  padding: 0 20px;
+}
+
+.contact-item {
+  display: flex;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+
+.contact-label {
+  width: 120px;
+  flex-shrink: 0;
+  color: #888888;
+}
+
+.contact-detail {
+  color: #111111;
+}
+
+.contact-detail a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact-detail a:hover {
+  color: #666666;
+}
