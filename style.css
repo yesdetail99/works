@@ -6,20 +6,6 @@ html, body {
   background-color: #ffffff;
   font-family: "Helvetica Neue", Arial, "Hiragino Sans", sans-serif;
   color: #111111;
-
-  /* 背景画像の基本指定（PC用） */
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; /* PCでは画面いっぱいにカバー（余白なし） */
-}
-
-/* --- スマホ表示（画面幅768px以下）の設定 --- */
-@media (max-width: 768px) {
-  html, body {
-    /* スマホで「写真全体を納めたい（切らさない）」場合は contain */
-    /* ※ もし切り落としてでも画面を埋めたい場合は cover にしてください */
-    background-size: contain;
-  }
 }
 
 a {
@@ -56,15 +42,28 @@ a {
   letter-spacing: 0.05em;
 }
 
+/* トップページ */
 
+.top-page {
+  /* 画像を1枚だけに限定し、繰り返さない */
+  background-repeat: no-repeat;
+
+  /* 画像を画面の中央に配置 */
+  background-position: center center;
+
+  /* 画面全体を覆うように拡大表示する（おすすめ） */
+  background-size: cover;
+
+  background-attachment: fixed;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
 
 .top-container {
   max-width: 860px;
   margin: 80px auto 100px;
   padding: 0 20px;
 }
-
-/* （以下略：変更なし） */
 
 .top-image-wrap {
   width: 100%;
@@ -175,10 +174,6 @@ a {
 .work-link a:hover {
   color: #111111;
 }
-
-
-
-
 
 /* Contactページ */
 .contact-container {

@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>YUMI KAMBAYASHI</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -34,12 +33,10 @@
     // 背景画像を設定し、同時に「繰り返さない」「全体に拡大」を強制適用する
     document.body.style.backgroundImage = "url('" + randomImage + "')";
     document.body.style.backgroundRepeat = "no-repeat";        /* タイル状に繰り返さない */
-    document.body.style.backgroundSize = "contain";              /* 画面全体を覆うように拡大 */
-    document.body.style.backgroundPosition = "center center";  /* 中央寄背 */
+    document.body.style.backgroundSize = "cover";              /* 画面全体を覆うように拡大 */
+    document.body.style.backgroundPosition = "center center";  /* 中央配置 */
     document.body.style.backgroundAttachment = "fixed";        /* 画面に固定 */
   </script>
 
-
 </body>
 </html>
-
