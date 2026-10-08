@@ -56,10 +56,7 @@ a {
   letter-spacing: 0.05em;
 }
 
-/* トップページ */
-.top-page {
-  /* 背景指定は html, body に集約したため、ここでは不要な背景ルールをすべて削除しました */
-}
+
 
 .top-container {
   max-width: 860px;
